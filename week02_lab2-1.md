@@ -1,4 +1,4 @@
-# ใบงานการทดลองที่ 2-1
+<img width="1410" height="652" alt="image" src="https://github.com/user-attachments/assets/2e219fdb-18ca-431f-b4c0-77d1e2ac14e5" /># ใบงานการทดลองที่ 2-1
 # Dart Programming Fundamentals
 ### วิชา: การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่
 
@@ -275,9 +275,9 @@ void main() {
 **บันทึกผลการทดลอง: บันทึกโค้ดคำสั่งที่ได้**
 ```dart
 // บันทึกโค้ดในส่วนนี้
-
-
 ```
+<img width="1410" height="652" alt="image" src="https://github.com/user-attachments/assets/5bda6b8f-b5ac-4812-9d41-704e56a34676" />
+
 ---
 
 ## ส่วนที่ 2 — ทฤษฎีและการทดลอง: Functions
