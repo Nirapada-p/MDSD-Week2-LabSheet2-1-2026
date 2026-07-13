@@ -273,8 +273,6 @@ void main() {
 วิชาที่ผ่าน: {Mobile Dev, Web Dev, AI, Database}
 ```
 **บันทึกผลการทดลอง: บันทึกโค้ดคำสั่งที่ได้**
-```dart
-```
 <img width="1410" height="652" alt="image" src="https://github.com/user-attachments/assets/5bda6b8f-b5ac-4812-9d41-704e56a34676" />
 
 ---
