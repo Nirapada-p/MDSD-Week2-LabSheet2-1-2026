@@ -1,4 +1,4 @@
-# ใบงานการทดลองที่ 2-1
+<img width="1410" height="652" alt="image" src="https://github.com/user-attachments/assets/fd3c72da-cce7-4504-9e8d-98c9b3be1370" /># ใบงานการทดลองที่ 2-1
 # Dart Programming Fundamentals
 ### วิชา: การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่
 
@@ -274,7 +274,6 @@ void main() {
 ```
 **บันทึกผลการทดลอง: บันทึกโค้ดคำสั่งที่ได้**
 ```dart
-// บันทึกโค้ดในส่วนนี้
 ```
 <img width="1410" height="652" alt="image" src="https://github.com/user-attachments/assets/5bda6b8f-b5ac-4812-9d41-704e56a34676" />
 
