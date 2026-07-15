@@ -1551,7 +1551,7 @@ Future<double> calculateTax(double income) async {
 // ==============================
 Stream<String> chatMessages() async* {
   List<String> messages = [
-    "สวัสดีครับ",
+    "สวีดัส สวัสดี",
     "กำลังทำงานส่งอาจารย์สุรชัย",
     "ตอนไหนจะเส็จนะ",
     "ง่วงแล้วนะ",
@@ -1610,7 +1610,7 @@ void main() async {
 
 ```
 
-<img width="707" height="457" alt="image" src="https://github.com/user-attachments/assets/6cbf3472-7582-4c33-be3c-b282758bc653" />
+<img width="491" height="442" alt="image" src="https://github.com/user-attachments/assets/3a25d2ff-36e5-4864-93bb-94f233e1df90" />
 
 ---
 
