@@ -1206,6 +1206,11 @@ void main() {
 
 
 ```
+<img width="563" height="542" alt="image" src="https://github.com/user-attachments/assets/8e088f54-d06f-4e73-8361-6048ece622d0" />
+
+<img width="580" height="685" alt="image" src="https://github.com/user-attachments/assets/41931cf8-aa01-4d8b-82cd-a30b894eeb84" />
+
+
 ---
 
 ## ส่วนที่ 4 — ทฤษฎีและการทดลอง: Async/Await และ Future
