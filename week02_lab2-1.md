@@ -1508,10 +1508,110 @@ void main() async {
 
 **บันทึกผลการทดลอง: บันทึกโค้ดคำสั่งที่ได้**
 ```dart
-// บันทึกโค้ดในส่วนนี้
+import 'dart:async';
 
+// ==============================
+// จำลองการดึงข้อมูลรายได้ผู้ใช้
+// ==============================
+Future<double> fetchIncome(int userId) async {
+  print("[API] กำลังดึงรายได้ของ User $userId...");
+  await Future.delayed(Duration(milliseconds: 600));
+
+  switch (userId) {
+    case 1:
+      return 120000;
+    case 2:
+      return 280000;
+    case 3:
+      return 650000;
+    default:
+      return 0;
+  }
+}
+
+// ==============================
+// คำนวณภาษี
+// ==============================
+Future<double> calculateTax(double income) async {
+  await Future.delayed(Duration(milliseconds: 500));
+
+  if (income <= 150000) {
+    return 0;
+  } else if (income <= 300000) {
+    return income * 0.05;
+  } else if (income <= 500000) {
+    return income * 0.10;
+  } else {
+    return income * 0.20;
+  }
+}
+
+// ==============================
+// Stream จำลอง Chat Message
+// ==============================
+Stream<String> chatMessages() async* {
+  List<String> messages = [
+    "สวัสดีครับ",
+    "กำลังทำงานส่งอาจารย์สุรชัย",
+    "ตอนไหนจะเส็จนะ",
+    "ง่วงแล้วนะ",
+    "เสร็จเรียบร้อยรอส่ง",
+  ];
+
+  for (String message in messages) {
+    await Future.delayed(Duration(seconds: 1));
+    yield message;
+  }
+}
+
+// ==============================
+// Main
+// ==============================
+void main() async {
+  print("========== Future.wait ==========\n");
+
+  // ดึงรายได้พร้อมกัน
+  List<double> incomes = await Future.wait([
+    fetchIncome(1),
+    fetchIncome(2),
+    fetchIncome(3),
+  ]);
+
+  print("\nเริ่มคำนวณภาษี...\n");
+
+  // คำนวณภาษีพร้อมกัน
+  List<double> taxes = await Future.wait(
+    incomes.map((income) => calculateTax(income)),
+  );
+
+  double totalTax = 0;
+
+  for (int i = 0; i < incomes.length; i++) {
+    print(
+      "User ${i + 1} | รายได้: ${incomes[i].toStringAsFixed(2)} บาท | "
+      "ภาษี: ${taxes[i].toStringAsFixed(2)} บาท",
+    );
+    totalTax += taxes[i];
+  }
+
+  print("\nภาษีรวมทั้งหมด = ${totalTax.toStringAsFixed(2)} บาท");
+
+  // ==========================
+  // Stream
+  // ==========================
+  print("\n========== Chat Stream ==========\n");
+
+  await for (String message in chatMessages()) {
+    print("$message");
+  }
+
+  print("\nสิ้นสุดการรับข้อความ");
+}
 
 ```
+
+<img width="707" height="457" alt="image" src="https://github.com/user-attachments/assets/6cbf3472-7582-4c33-be3c-b282758bc653" />
+
 ---
 
 
